@@ -6,7 +6,7 @@ body {
 
 /* Header Styling */
 .header-zakat-content {
-  background: url(./Assets/Header-image.png) no-repeat center center;
+  background: url(./Assets/Header-images.png) no-repeat center center;
   background-size: 100% 100%;
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
