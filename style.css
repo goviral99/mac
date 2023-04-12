@@ -91,6 +91,8 @@ body {
 .main-zakat-description,
 .main-zakat-nisab-description {
   color: #8d8d8d;
+    font-size: 2rem;
+
 }
 
 .main-zakat-nisab-container {
