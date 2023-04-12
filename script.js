@@ -9,8 +9,8 @@ function getValue(id) {
 }
 
 function calculate() {
-    // The price of about 3oz of gold
-    const nisab_amount = 7497.03;
+    // The price of about 3oz of Silver
+    const nisab_amount = 624.60;
 
     // Assets
     const cash_amount = getValue("cash_amount");
