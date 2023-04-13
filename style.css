@@ -150,7 +150,6 @@ body {
 }
 
 .main-zakat-net-assets,
-.main-zakat-nisab-threshold,
 .main-zakat-total-amount {
   display: flex;
   justify-content: space-between;
