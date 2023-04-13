@@ -92,6 +92,11 @@ body {
   gap: 1rem;
 }
 
+.main-zakat-form-elements-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-zakat-form-elements {
   display: flex;
   justify-content: space-between;
@@ -103,6 +108,44 @@ body {
   display: flex;
   width: 60%;
   align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.main-zakat-info-icon {
+  cursor: pointer;
+  color: #8d8d8d;
+}
+
+.main-zakat-info-display {
+  display: none;
+  align-self: center;
+  width: 100%;
+  margin: 2rem 0;
+  font-weight: 100;
+
+  animation: dropdown 100ms ease-in-out forwards;
+}
+
+@keyframes dropdown {
+  from {
+    transform: translateY(-10%);
+    border-bottom: 0.5px inset transparent;
+  }
+  to {
+    transform: translateY(0);
+    border-bottom: 0.5px inset black;
+  }
+}
+
+.main-zakat-info-display p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.hidden {
+  display: block;
 }
 
 .main-zakat-input-container {

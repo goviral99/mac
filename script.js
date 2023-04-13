@@ -76,3 +76,16 @@ function handleReset() {
 
     calculate()
 }
+
+(function toggleInfo() {
+    // Toggle Info
+    const infoIcons = document.querySelectorAll('.main-zakat-info-icon');
+
+    infoIcons.forEach((icon) => {
+        icon.addEventListener('click', () => {
+            const infoDisplay = icon.closest('.main-zakat-form-elements-container').querySelector('.main-zakat-info-display');
+
+            infoDisplay.classList.toggle('hidden');
+        });
+    });
+})();

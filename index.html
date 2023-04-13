@@ -34,190 +34,399 @@
 
       <div class="main-zakat-form-container">
         <form class="main-zakat-form">
-          <div class="main-zakat-form-elements">
-            <div class="main-zakat-label-container">
-              <label class="main-zakat-label" for="cash_amount"
-                >Cash Amount</label
-              >
+          <div class="main-zakat-form-elements-container">
+            <div class="main-zakat-form-elements">
+              <div class="main-zakat-label-container">
+                <label class="main-zakat-label" for="cash_amount"
+                  >Cash Amount</label
+                >
+                <span class="main-zakat-info-icon">&#9432;</span>
+              </div>
+              <div class="main-zakat-input-container">
+                <span class="main-zakat-money-symbol">&#36;</span>
+                <input
+                  type="number"
+                  class="main-zakat-input"
+                  id="cash_amount"
+                  onchange="calculate()"
+                />
+              </div>
             </div>
-            <div class="main-zakat-input-container">
-              <span class="main-zakat-money-symbol">&#36;</span>
-              <input
-                type="number"
-                class="main-zakat-input"
-                id="cash_amount"
-                onchange="calculate()"
-              />
-            </div>
-          </div>
-
-          <div class="main-zakat-form-elements">
-            <div class="main-zakat-label-container">
-              <label class="main-zakat-label" for="value_of_gold"
-                >Value of Gold</label
-              >
-            </div>
-            <div class="main-zakat-input-container">
-              <span class="main-zakat-money-symbol">&#36;</span>
-              <input
-                type="number"
-                class="main-zakat-input"
-                id="value_of_gold"
-                onchange="calculate()"
-              />
-            </div>
-          </div>
-
-          <div class="main-zakat-form-elements">
-            <div class="main-zakat-label-container">
-              <label class="main-zakat-label" for="value_of_silver"
-                >Value of Silver</label
-              >
-            </div>
-            <div class="main-zakat-input-container">
-              <span class="main-zakat-money-symbol">&#36;</span>
-              <input
-                type="number"
-                class="main-zakat-input"
-                id="value_of_silver"
-                onchange="calculate()"
-              />
+            <div class="main-zakat-info-display">
+              <p>
+                All cash you own is subject to Zakat, whether in your bank
+                accounts, in another currency or stored with another person.
+                <br />
+                <br />
+                Cash can be easily understood as liquid wealth. It can be in the
+                form of real cash bills, money available in the bank, or
+                cryptocurrency.
+                <br />
+                <br />
+                Note on interest earned on liquid wealth: do not include this
+                amount here, it should be donated as regular Sadaqa or charity.
+              </p>
             </div>
           </div>
 
-          <div class="main-zakat-form-elements">
-            <div class="main-zakat-label-container">
-              <label class="main-zakat-label" for="other_savings"
-                >Other Savings</label
-              >
+          <div class="main-zakat-form-elements-container">
+            <div class="main-zakat-form-elements">
+              <div class="main-zakat-label-container">
+                <label class="main-zakat-label" for="value_of_gold"
+                  >Value of Gold</label
+                >
+                <span class="main-zakat-info-icon">&#9432;</span>
+              </div>
+              <div class="main-zakat-input-container">
+                <span class="main-zakat-money-symbol">&#36;</span>
+                <input
+                  type="number"
+                  class="main-zakat-input"
+                  id="value_of_gold"
+                  onchange="calculate()"
+                />
+              </div>
             </div>
-            <div class="main-zakat-input-container">
-              <span class="main-zakat-money-symbol">&#36;</span>
-              <input
-                type="number"
-                class="main-zakat-input"
-                id="other_savings"
-                onchange="calculate()"
-              />
-            </div>
-          </div>
-
-          <div class="main-zakat-form-elements">
-            <div class="main-zakat-label-container">
-              <label class="main-zakat-label" for="RRSP_RESP_savings"
-                >RRSP or RESP Savings</label
-              >
-            </div>
-            <div class="main-zakat-input-container">
-              <span class="main-zakat-money-symbol">&#36;</span>
-              <input
-                type="number"
-                class="main-zakat-input"
-                id="RRSP_RESP_savings"
-                onchange="calculate()"
-              />
-            </div>
-          </div>
-
-          <div class="main-zakat-form-elements">
-            <div class="main-zakat-label-container">
-              <label class="main-zakat-label" for="money_owed_to_you"
-                >Money Owed To You</label
-              >
-            </div>
-            <div class="main-zakat-input-container">
-              <span class="main-zakat-money-symbol">&#36;</span>
-              <input
-                type="number"
-                class="main-zakat-input"
-                id="money_owed_to_you"
-                onchange="calculate()"
-              />
+            <div class="main-zakat-info-display">
+              <p>
+                Enter the dollar value only.
+                <br />
+                <br />
+                Gold that you own in any form is subject to Zakat according to
+                its weight value. Gold can be valued by its weight and resale
+                value by a jeweler or you can multiply the number of grams (of
+                gold) that you own by the current market value.
+                <br />
+                <br />
+                This includes any jewelry, coins, ornaments, etc. made of gold.
+                There is a difference of scholarly opinion regarding whether
+                Zakat is due on jewelry kept for personal use vs. that which is
+                kept as an investment or to sell, however it is safer to pay
+                Zakat on all gold jewelry.
+                <br />
+                <br />
+                For personal use items made from a mixture of metals, these are
+                only subject to Zakat if 50% or more of the metal is gold
+                although some scholars hold that the proportion of gold in any
+                owned asset is subject to Zakat.
+                <br />
+                <br />
+                Precious gems and other metals are not subject to Zakat.
+              </p>
             </div>
           </div>
 
-          <div class="main-zakat-form-elements">
-            <div class="main-zakat-label-container">
-              <label class="main-zakat-label" for="stock_share_values"
-                >Stock and Share Values</label
-              >
+          <div class="main-zakat-form-elements-container">
+            <div class="main-zakat-form-elements">
+              <div class="main-zakat-label-container">
+                <label class="main-zakat-label" for="value_of_silver"
+                  >Value of Silver</label
+                >
+                <span class="main-zakat-info-icon">&#9432;</span>
+              </div>
+              <div class="main-zakat-input-container">
+                <span class="main-zakat-money-symbol">&#36;</span>
+                <input
+                  type="number"
+                  class="main-zakat-input"
+                  id="value_of_silver"
+                  onchange="calculate()"
+                />
+              </div>
             </div>
-            <div class="main-zakat-input-container">
-              <span class="main-zakat-money-symbol">&#36;</span>
-              <input
-                type="number"
-                class="main-zakat-input"
-                id="stock_share_values"
-                onchange="calculate()"
-              />
-            </div>
-          </div>
-
-          <div class="main-zakat-form-elements">
-            <div class="main-zakat-label-container">
-              <label class="main-zakat-label" for="money_you_owe"
-                >Money You Owe</label
-              >
-            </div>
-            <div class="main-zakat-input-container">
-              <span class="main-zakat-money-symbol">&#36;</span>
-              <input
-                type="number"
-                class="main-zakat-input"
-                id="money_you_owe"
-                onchange="calculate()"
-              />
-            </div>
-          </div>
-
-          <div class="main-zakat-form-elements">
-            <div class="main-zakat-label-container">
-              <label class="main-zakat-label" for="personal_expenses"
-                >Personal Expenses</label
-              >
-            </div>
-            <div class="main-zakat-input-container">
-              <span class="main-zakat-money-symbol">&#36;</span>
-              <input
-                type="number"
-                class="main-zakat-input"
-                id="personal_expenses"
-                onchange="calculate()"
-              />
+            <div class="main-zakat-info-display">
+              <p>
+                Enter the dollar value only.
+                <br />
+                <br />
+                Silver that you own in any form is subject to Zakat according to
+                its weight value. Silver can be valued by its weight and resale
+                value by a jeweler or you can multiply the number of grams (of
+                silver) that you own by the current market value.
+                <br />
+                <br />
+                This includes any jewelry, coins, ornaments, etc. made of
+                silver. There is a difference of scholarly opinion regarding
+                whether Zakat is due on jewelry kept for personal use vs. that
+                which is kept as an investment or to sell, however it is safer
+                to pay Zakat on all gold or silver jewelry.
+                <br />
+                <br />
+                For personal use items made from a mixture of metals, these are
+                only subject to Zakat if 50% or more of the metal is silver,
+                although some scholars hold that the proportion of silver in any
+                owned asset is subject to Zakat.
+                <br />
+                <br />
+                Precious gems and other metals are not subject to Zakat.
+              </p>
             </div>
           </div>
 
-          <div class="main-zakat-form-elements">
-            <div class="main-zakat-label-container">
-              <label class="main-zakat-label" for="business_expenses"
-                >Business Expenses</label
-              >
+          <div class="main-zakat-form-elements-container">
+            <div class="main-zakat-form-elements">
+              <div class="main-zakat-label-container">
+                <label class="main-zakat-label" for="other_savings"
+                  >Other Savings</label
+                >
+                <span class="main-zakat-info-icon">&#9432;</span>
+              </div>
+              <div class="main-zakat-input-container">
+                <span class="main-zakat-money-symbol">&#36;</span>
+                <input
+                  type="number"
+                  class="main-zakat-input"
+                  id="other_savings"
+                  onchange="calculate()"
+                />
+              </div>
             </div>
-            <div class="main-zakat-input-container">
-              <span class="main-zakat-money-symbol">&#36;</span>
-              <input
-                type="number"
-                class="main-zakat-input"
-                id="business_expenses"
-                onchange="calculate()"
-              />
+            <div class="main-zakat-info-display">
+              <p>
+                Any other savings which are not included above that you wish to
+                include
+              </p>
             </div>
           </div>
 
-          <div class="main-zakat-form-elements">
-            <div class="main-zakat-label-container">
-              <label class="main-zakat-label" for="other_outgoing_dues"
-                >Other Outgoing Dues</label
-              >
+          <div class="main-zakat-form-elements-container">
+            <div class="main-zakat-form-elements">
+              <div class="main-zakat-label-container">
+                <label class="main-zakat-label" for="RRSP_RESP_savings"
+                  >RRSP or RESP Savings</label
+                >
+                <span class="main-zakat-info-icon">&#9432;</span>
+              </div>
+              <div class="main-zakat-input-container">
+                <span class="main-zakat-money-symbol">&#36;</span>
+                <input
+                  type="number"
+                  class="main-zakat-input"
+                  id="RRSP_RESP_savings"
+                  onchange="calculate()"
+                />
+              </div>
             </div>
-            <div class="main-zakat-input-container">
-              <span class="main-zakat-money-symbol">&#36;</span>
-              <input
-                type="number"
-                class="main-zakat-input"
-                id="other_outgoing_dues"
-                onchange="calculate()"
-              />
+            <div class="main-zakat-info-display">
+              <p>
+                Since retirement plans and funds are owned assets or cash, they
+                are subject to Zakat depending on the nature of the fund.
+                <br />
+                <br />
+                <u>Accessible:</u> If you have access to withdraw funds, then
+                first calculate the total fund value minus the Penalties and
+                Taxes you will pay for early withdrawal, then add this value to
+                your Zakatable assets.
+                <br />
+                <br />
+                <u>Long Term:</u> If it is a long term fund and you do not have
+                access or control to withdraw, then you may treat it as a
+                passive investment and only pay Zakat upon maturity when you
+                have access to your investment. Zakat will be payable on the
+                entire value of the fund less any fees or taxes.
+              </p>
+            </div>
+          </div>
+
+          <div class="main-zakat-form-elements-container">
+            <div class="main-zakat-form-elements">
+              <div class="main-zakat-label-container">
+                <label class="main-zakat-label" for="money_owed_to_you"
+                  >Money Owed To You</label
+                >
+                <span class="main-zakat-info-icon">&#9432;</span>
+              </div>
+              <div class="main-zakat-input-container">
+                <span class="main-zakat-money-symbol">&#36;</span>
+                <input
+                  type="number"
+                  class="main-zakat-input"
+                  id="money_owed_to_you"
+                  onchange="calculate()"
+                />
+              </div>
+            </div>
+            <div class="main-zakat-info-display">
+              <p>
+                Zakat is payable on money owed to you that you are confident
+                will be returned back to you, such as personal loans to friends
+                and family. This does not include outstanding wages, unpaid
+                dowry, inheritance that is not in your possession or assets held
+                in trust.
+              </p>
+            </div>
+          </div>
+
+          <div class="main-zakat-form-elements-container">
+            <div class="main-zakat-form-elements">
+              <div class="main-zakat-label-container">
+                <label class="main-zakat-label" for="stock_share_values"
+                  >Stock and Share Values</label
+                >
+                <span class="main-zakat-info-icon">&#9432;</span>
+              </div>
+              <div class="main-zakat-input-container">
+                <span class="main-zakat-money-symbol">&#36;</span>
+                <input
+                  type="number"
+                  class="main-zakat-input"
+                  id="stock_share_values"
+                  onchange="calculate()"
+                />
+              </div>
+            </div>
+            <div class="main-zakat-info-display">
+              <p>
+                <u>Long Term:</u> For halal-compliant shares that are purchased
+                for long-term investment to generate dividends, without
+                intention to resell, then only the dividend income is added to
+                your Zakatable assets.
+                <br />
+                <br />
+                <u>Short Term:</u> If halal-compliant shares are purchased for
+                capital appreciation with the intention to resell, in the case
+                of day trading or short term trading, then the total of their
+                market value is added to your Zakatable assets.
+                <br />
+                <br />
+                If you are cashing out halal-compliant shares, the amount
+                remaining after taxes and fees, is added to your Zakatable
+                assets.
+              </p>
+            </div>
+          </div>
+
+          <div class="main-zakat-form-elements-container">
+            <div class="main-zakat-form-elements">
+              <div class="main-zakat-label-container">
+                <label class="main-zakat-label" for="money_you_owe"
+                  >Money You Owe</label
+                >
+                <span class="main-zakat-info-icon">&#9432;</span>
+              </div>
+              <div class="main-zakat-input-container">
+                <span class="main-zakat-money-symbol">&#36;</span>
+                <input
+                  type="number"
+                  class="main-zakat-input"
+                  id="money_you_owe"
+                  onchange="calculate()"
+                />
+              </div>
+            </div>
+            <div class="main-zakat-info-display">
+              <p>
+                You may deduct any short term debts that you owe and intend to
+                pay immediately from your Zakatable assets.
+                <br />
+                <br />
+                For long-term debt that you are actively paying, such as
+                mortgages or student loans, the preferred scholarly opinion is
+                that you should only deduct the immediate month’s principal
+                (non-interest) portion.*
+                <br />
+                <br />
+                Short term is considered anything less than one lunar year, and
+                long term is considered more than one lunar year.
+                <br />
+                <br />
+                If payments are not being paid on the long-term debt, then it
+                should not be deducted from your Zakatable assets.
+                <br />
+                <br />
+                * There is a difference of opinion that allows the non-interest
+                or principal portion of the upcoming lunar year’s worth of
+                payments to be deducted for Zakat calculation purposes. Please
+                refer to your local scholars.
+              </p>
+            </div>
+          </div>
+
+          <div class="main-zakat-form-elements-container">
+            <div class="main-zakat-form-elements">
+              <div class="main-zakat-label-container">
+                <label class="main-zakat-label" for="personal_expenses"
+                  >Personal Expenses</label
+                >
+                <span class="main-zakat-info-icon">&#9432;</span>
+              </div>
+              <div class="main-zakat-input-container">
+                <span class="main-zakat-money-symbol">&#36;</span>
+                <input
+                  type="number"
+                  class="main-zakat-input"
+                  id="personal_expenses"
+                  onchange="calculate()"
+                />
+              </div>
+            </div>
+            <div class="main-zakat-info-display">
+              <p>
+                You may deduct your personal and living expenses for the
+                upcoming month from your Zakatable assets, including outstanding
+                or overdue living expenses, such as rent payments, utility
+                bills, food, and other bills.
+              </p>
+            </div>
+          </div>
+
+          <div class="main-zakat-form-elements-container">
+            <div class="main-zakat-form-elements">
+              <div class="main-zakat-label-container">
+                <label class="main-zakat-label" for="business_expenses"
+                  >Business Expenses</label
+                >
+                <span class="main-zakat-info-icon">&#9432;</span>
+              </div>
+              <div class="main-zakat-input-container">
+                <span class="main-zakat-money-symbol">&#36;</span>
+                <input
+                  type="number"
+                  class="main-zakat-input"
+                  id="business_expenses"
+                  onchange="calculate()"
+                />
+              </div>
+            </div>
+            <div class="main-zakat-info-display">
+              <p>
+                You may deduct business expenses from your Zakatable assets,
+                including rent, bills, salaries, even if they are outstanding or
+                overdue.
+                <br />
+                <br />
+                You may also deduct the amount of outstanding short term
+                commercial loans that are due in less than 1 lunar year and you
+                actively intend to pay back. For long term business debt, deduct
+                only the immediate month’s principal (non-interest) portion.
+                <br />
+                <br />
+                For goods purchased on credit, deduct the total value of the
+                goods.
+              </p>
+            </div>
+          </div>
+
+          <div class="main-zakat-form-elements-container">
+            <div class="main-zakat-form-elements">
+              <div class="main-zakat-label-container">
+                <label class="main-zakat-label" for="other_outgoing_dues"
+                  >Other Outgoing Dues</label
+                >
+                <span class="main-zakat-info-icon">&#9432;</span>
+              </div>
+              <div class="main-zakat-input-container">
+                <span class="main-zakat-money-symbol">&#36;</span>
+                <input
+                  type="number"
+                  class="main-zakat-input"
+                  id="other_outgoing_dues"
+                  onchange="calculate()"
+                />
+              </div>
+            </div>
+            <div class="main-zakat-info-display">
+              <p>Any other outgoing dues that you wish to include</p>
             </div>
           </div>
         </form>
