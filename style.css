@@ -118,11 +118,31 @@ body {
 }
 
 .main-zakat-info-display {
+  position: relative;
   display: none;
   align-self: center;
   width: 100%;
-  margin: 2rem 0;
+  margin: 1rem 0;
   font-weight: 100;
+
+  background-color: #bebebe;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3),
+    0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+}
+
+.main-zakat-info-display::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 100%;
+  left: 1.5rem;
+  border: 0.75rem solid transparent;
+  border-top: none;
+  border-bottom-color: #bebebe;
+  filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.1));
 }
 
 .main-zakat-info-display p {
@@ -269,6 +289,10 @@ body {
   /* Main Content Styling */
   .main-zakat-content {
     margin: 2rem 20rem 2rem;
+  }
+
+  .main-zakat-info-display::before {
+    left: 3rem;
   }
 
   .main-zakat-money-symbol,
