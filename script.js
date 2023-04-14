@@ -85,7 +85,7 @@ function handleReset() {
         icon.addEventListener('click', () => {
             const infoDisplay = icon.closest('.main-zakat-form-elements-container').querySelector('.main-zakat-info-display');
 
-            infoDisplay.classList.toggle('hidden');
+            infoDisplay.classList.toggle('show');
         });
     });
 })();
